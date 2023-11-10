@@ -16,7 +16,7 @@ Designed for the busy, on the go individual. Do you need to add important events
 
 Look no further! 
 
-Deployed Page: 
+Deployed Page: https://liamss.github.io/workdayscheduler/
 Github Repo: https://github.com/Liamss/workdayscheduler
 
 ## Installation
@@ -38,7 +38,7 @@ n/a
 
 ## Screenshot 
 
-![Excalidraw simple wireframe template](<Wireframe of scheduler.png>)
+![Exaclidraw wireframe of webpage with heading, date and 4 time blocks showing red and green slots](<assets/Wireframe of scheduler.png>)
 
 
 

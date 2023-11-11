@@ -59,7 +59,6 @@ function changeBlockColours() {
         var hourBlock = parseInt($(this).attr('id'));
         var textArea = $(this).find('textarea');
 
-console.log($(this).attr('id'))
 
 // If logic to set the colours for three options
 

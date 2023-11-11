@@ -28,16 +28,18 @@ $('.saveBtn').on('click', function() {
 
 localStorage.setItem(hour, text);
 
-console.log("textarea")
+console.log("textarea");
 
 });
 
-// Load data from local storage 
+// Load data from local storage - upon each open, load the schedule by running through each timeblock, finding the text for the hour, then pulling the associated text which = text area 
 
 function LoadSchedule() {
     $('.time-block').each(function () {
         var hour = $(this).find('.hour').text();
         var text = localStorage.getItem(hour);
+
+// If there is text, then load it
 
         if (text) {
             $(this).find('textarea').val(text);
@@ -49,3 +51,28 @@ function LoadSchedule() {
 
 LoadSchedule();
 
+// Function for changing colours = change block colours, for each text area, based on the hour 
+// NOT YET WORKING - i don't think hourBlock is returning a number because it says 9AM for example, then currentHour displays a number
+
+function changeBlockColours() {
+    $('.time-block').each(function () {
+        var hourBlock = parseInt($(this).find('.hour').text());
+        var textArea = $(this).find('textarea');
+
+
+// If logic to set the colours for three options
+
+        if (hourBlock < currentHour) {
+        textArea.addClass('past');
+        } else if (hourBlock === currentHour) {
+        textArea.addClass('present');
+        } else {
+        textArea.addClass('future');
+        }
+    });
+}
+
+
+// Call the function
+
+changeBlockColours();

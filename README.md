@@ -29,6 +29,8 @@ Please visit the URLs provided to see the latest deployed version
 
 ## Learnings / Future Work 
 
+- Must remember to call the function. Constant refreshing and writing, adding and removing symbols wondering why it's not working 
+
 
 ## Credits
 N/A

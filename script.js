@@ -56,7 +56,7 @@ LoadSchedule();
 
 function changeBlockColours() {
     $('.time-block').each(function () {
-        var hourBlock = parseInt($(this).find('id').text());
+        var hourBlock = parseInt($(this).attr('id'));
         var textArea = $(this).find('textarea');
 
 console.log($(this).attr('id'))
@@ -72,7 +72,6 @@ console.log($(this).attr('id'))
         }
     });
 }
-
 
 // Call the function
 

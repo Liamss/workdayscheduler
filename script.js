@@ -56,9 +56,10 @@ LoadSchedule();
 
 function changeBlockColours() {
     $('.time-block').each(function () {
-        var hourBlock = parseInt($(this).find('.hour').text());
+        var hourBlock = parseInt($(this).find('id').text());
         var textArea = $(this).find('textarea');
 
+console.log($(this).attr('id'))
 
 // If logic to set the colours for three options
 

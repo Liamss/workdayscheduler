@@ -52,7 +52,6 @@ function LoadSchedule() {
 LoadSchedule();
 
 // Function for changing colours = change block colours, for each text area, based on the hour 
-// NOT YET WORKING - i don't think hourBlock is returning a number because it says 9AM for example, then currentHour displays a number
 
 function changeBlockColours() {
     $('.time-block').each(function () {
